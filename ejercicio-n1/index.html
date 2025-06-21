@@ -10,6 +10,7 @@
       <div class="form__div-inputs">
         <label for="input-0">N° de entradas *</label>
         <input type="number" name="numero" id="input-0" min="0" max="10" />
+
         <label for="input-1">Beneficiario</label>
         <input type="text" name="beneficiario" id="input-1" value="Puma" />
         <label for="input-2">Referencia de entradas</label>
@@ -45,8 +46,11 @@ Son tres invitaciones, ofrecidas por Fernando</textarea
     </form>
   </body>
   <style>
+    :root {
+      --background-color: #fafafa;
+    }
     body {
-      background-color: #fafafa;
+      background-color: var(--background-color);
     }
     .form {
       width: 350px;
