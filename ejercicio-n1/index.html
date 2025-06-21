@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="formulario-entradas" class="form">
+      <div class="form__div-inputs">
+        <label for="input-0">N° de entradas *</label>
+        <input type="number" name="numero" id="input-0" min="0" max="10" />
+        <label for="input-1">Beneficiario</label>
+        <input type="text" name="beneficiario" id="input-1" value="Puma" />
+        <label for="input-2">Referencia de entradas</label>
+        <input
+          type="text"
+          name="referencia"
+          id="input-2"
+          value="Entradas VIP compra temporada"
+        />
+        <label for="input-3">Dirección *</label>
+        <input
+          type="text"
+          name="direccion"
+          id="input-3"
+          value="Enviadas por WhatsApp a Marta verano"
+        />
+        <label for="input-4">Descripción</label>
+        <textarea name="Descripción" id="input-4">
+Son tres invitaciones, ofrecidas por Fernando</textarea
+        >
+      </div>
+      <div class="form__div-buttons">
+        <div class="form__div-buttons-row">
+          <button class="form__btn form__btn--decline">Rechazar</button>
+          <button class="form__btn form__btn--authorize">Autorizar</button>
+          <!-- *ver modificadores adicionales que agregré -->
+        </div>
+        <div class="form__div-buttons-column">
+          <button class="form__btn form__btn--cancel">Cancelar</button>
+          <button class="form__btn form__btn--save">Guardar</button>
+        </div>
+      </div>
+    </form>
+  </body>
+  <style>
+    body {
+      background-color: #fafafa;
+    }
+    .form {
+      width: 350px;
+      height: 100%;
+      /* background-color: #26c6db; */
+      color: rgb(00, 00, 45);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      border-top: rgb(242, 30, 39) 1px solid;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    .form__div-inputs {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      font-weight: bold;
+      padding: 25px;
+    }
+    input {
+      background-color: #fafafa;
+      border: none;
+      outline: none;
+      color: rgb(00, 00, 45);
+      font-weight: 400;
+      font-size: 13px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      padding: 8px;
+    }
+    textarea {
+      background-color: #fafafa;
+      border: none;
+      outline: none;
+      color: rgb(00, 00, 45);
+      font-weight: 400;
+      font-size: 13px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      padding: 8px;
+      resize: none;
+    }
+    .form__div-buttons {
+      background-color: transparent;
+      /* display: flex;
+      flex-direction: column;
+      row-gap: 15px; */
+    }
+    .form__div-buttons-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0px 30px 0px;
+    }
+    /* como rescribir esto mejor */
+    .form__div-buttons-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .form__btn {
+      background-color: rgb(00, 00, 45);
+      color: white;
+      border: none;
+      padding: 8px 45px;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    .form__btn--decline {
+      background-color: rgb(242, 30, 39);
+      color: white;
+    }
+    .form__btn--cancel {
+      background-color: transparent;
+      color: rgb(00, 00, 45);
+      border: rgb(00, 00, 45) 1px solid;
+    }
+  </style>
+</html>
