@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="" class="form">
+      <div class="form__header">
+        <div class="form__logo">
+          <img src="logo/liga-logo.png" alt="liga-logo" />
+          <h3>OTROS</h3>
+        </div>
+        <div class="form__state">
+          <div class="form__circle"></div>
+          <div class="form__pending">Pendiente</div>
+        </div>
+      </div>
+      <div class="form__inputs">
+        <div class="form__input-number">
+          <label for="input-0">N° de entradas *</label>
+          <input type="number" name="numero" id="input-0" min="0" max="5" />
+        </div>
+        <div class="form__inputs-group inputs-group">
+          <div class="inputs-group__input-1">
+            <label for="input-1">Beneficiario</label>
+            <input type="text" name="beneficiario" id="input-1" value="Puma" />
+          </div>
+          <div class="inputs-group__input-2">
+            <label for="input-2">Referencia de entradas</label>
+            <input type="text" name="referencia" id="input-2" value="Entradas VIP compra temporada" />
+          </div>
+        </div>
+        <div class="form__input-direction">
+          <label for="input-3">Dirección *</label>
+          <input type="text" name="direccion" id="input-3" value="Enviadas por WhatsApp a Marta verano" />
+        </div>
+        <div class="form__input-description">
+          <label for="input-4">Descripción</label>
+          <textarea name="Descripción" id="input-4">Son tres invitaciones, ofrecidas por Fernando</textarea>
+        </div>
+      </div>
+      <div class="form__buttons">
+        <div class="form__buttons-left">
+          <button class="form__button form__button--solid-1">Rechazar</button>
+          <button class="form__button form__button--solid-2">Autorizar</button>
+        </div>
+        <div class="form__buttons-right">
+          <button class="form__button form__button--transparent">Cancelar</button>
+          <button class="form__button form__button--solid-3">Guardar</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
