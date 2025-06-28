@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.form {
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-rows: 0.1fr 2fr 0.1fr;
+  gap: 35px;
+  margin: 20px;
+}
+.header {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: rgb(244, 75, 69) 4px solid;
+  /* padding: 10px 0px; */
+}
+.img__big-cola {
+  width: 50px;
+  height: 100%;
+  filter: grayscale(100%);
+}
+.header__container {
+  height: fit-content;
+  display: flex;
+  gap: 20px;
+}
+.max-tickets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: fit-content;
+  border-right: rgb(242, 30, 39) 1px solid;
+  gap: 15px;
+}
+.max-tickets__label {
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(55, 55, 76);
+}
+.max-tickets__input {
+  width: 20%;
+  background-color: #fafafa;
+  border: none;
+  color: rgb(0, 0, 27);
+  font-size: 12px;
+  outline: none;
+  padding: 5px 12px;
+  font-weight: bold;
+}
+.season {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 15px;
+  color: #1a1a32;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "la-liga hypermotion copa-rey"
+    "supercopa champions-league europa-league";
+  gap: 35px;
+}
+
+.cards__la-liga {
+  grid-area: la-liga;
+}
+.cards__hypermotion {
+  grid-area: hypermotion;
+}
+.cards__copa-rey {
+  grid-area: copa-rey;
+}
+.cards__supercopa {
+  grid-area: supercopa;
+}
+.cards__champions-league {
+  grid-area: champions-league;
+}
+.cards__europa-league {
+  grid-area: europa league;
+}
+
+.box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.size {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 3fr;
+  grid-template-areas:
+    "logo   logo"
+    "box-1  box-2";
+  gap: 20px;
+}
+/* layout */
+.box__input-total,
+.box__input-available {
+  width: 90%;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.logo {
+  grid-area: logo;
+  background-color: #00001b;
+}
+.box__input-total {
+  grid-area: box-1;
+  background-color: #fafafa;
+  padding: 5px;
+  display: block;
+  opacity: 0.4;
+}
+.box__input-available {
+  grid-area: box-2;
+  background-color: white;
+  color: rgb(244, 75, 69);
+  font-size: 22px;
+  font-weight: bold;
+}
+.box__total-tickets {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 0px 30px 25px;
+}
+.box__available-tickets {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0px 30px 25px 0px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  /* esto lo busqué, no sabía como hacer para sacarlo */
+}
+.button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.button__transparent {
+  background-color: transparent;
+  color: rgb(0, 0, 27);
+  border: none;
+  
+}
+.button__solid {
+  background-color: rgb(00, 00, 27);
+  color: white;
+  border: none;
+}
+.button__solid,
+.button__transparent {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 8px 15px;
+}
+.box__label-total, .box__label-available {
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.box__text-bold {
+  font-weight: bold;
+}
